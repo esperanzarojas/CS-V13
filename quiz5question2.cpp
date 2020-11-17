@@ -41,6 +41,17 @@ void findmatchnum(int num1[], int size1, int num2[], int size2)
       if (num1[i]== num1[c])
       check= false;
     }
+    //end of check
+    if(check)//for efficiency
+    for(intl=0; l<size2; l++){
+      check = true;
+      for(int o=0; o< l; o++){
+        if (num2[l] == num2[o])
+        check=false;
+      }
+      if (check)
+      if (num2[l==num1[i]]
+    }
   } 
     cout << "The number of matched elements "  << match << endl;
 }
