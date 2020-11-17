@@ -29,4 +29,14 @@ void printbinary(int num[], int size)
 void count0cluster(int bin[], int size)
 {
   int c = 0, side = 1;
+  for (int i=0; i<size; i++){
+    if (bin[i]==0) {
+      if (side == 1)
+      c++;
+      side = 0;
+    }
+    else{
+      side = 1;
+    }
+  }
 }
