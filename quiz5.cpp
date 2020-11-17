@@ -9,15 +9,24 @@ int main()
     int     sum=0;
 
     //*** my code  
-    for(int i=0; i<SIZE; i++)
-    sum +=numbers[i];
-
+    for(int i=0; i<SIZE; i++){
+      sum = sum + numbers[i];
+    }
+    
+   //calculate difference
     for (int i =0; i< SIZE; i++) {
       diff[i] = sum-numbers[i];
-      if (i==0)
-      cout << "\nNumbers--> Diff\n";
-      cout<< numbers[i] << " --> " diff[i]<< endl;
+    }
+    //set width and print results
+    for (int i=0;i<SIZE;i++){
+      cout<< " "<<numbers[i]<<setw(2);
+    }
       
+    cout<<endl;
+    for(int i=0; i<SIZE;i++){
+      cout<<diff[i]<<" ";
+    }
+
       
     }
 
