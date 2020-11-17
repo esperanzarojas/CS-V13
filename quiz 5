@@ -9,5 +9,11 @@ int main()
     int     sum=0;
 
     //*** my code  
-    
+    for(int i=0; i<SIZE; i++)
+    sum +=numbers[i];
+
+    for (int i =0; i< SIZE; i++) {
+      
+    }
+
 }
