@@ -13,6 +13,11 @@ int main()
     sum +=numbers[i];
 
     for (int i =0; i< SIZE; i++) {
+      diff[i] = sum-numbers[i];
+      if (i==0)
+      cout << "\nNumbers--> Diff\n";
+      cout<< numbers[i] << " --> " diff[i]<< endl;
+      
       
     }
 
