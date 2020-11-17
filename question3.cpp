@@ -40,3 +40,4 @@ void count0cluster(int bin[], int size)
     }
   }
 }
+cout << "Count of clusters:"<< c << endl;
